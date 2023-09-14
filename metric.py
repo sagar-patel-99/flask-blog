@@ -10,7 +10,7 @@ def call_api():
         # print(response.text)
     except requests.RequestException as e:
         # Handle the exception or print an error message
-        print(f"An error occurred: {e}")
+        print("An error occurred: {e}")
 
 def main():
     for _ in range(CALLS):
