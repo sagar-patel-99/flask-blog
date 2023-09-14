@@ -63,3 +63,6 @@ def delete(id):
     posts.remove(post)
     flash('Post "{}" was successfully deleted!'.format(post['title']))
     return redirect(url_for('index'))
+
+if __name__ == "__main__":
+    app.run("0.0.0.0", debug=True)
